@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/root"
+    tools:context="com.example.callyou.MainActivity" >
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:text="打电话和发短信app" />
+    <EditText
+        android:id="@+id/editNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="15dp"
+        android:hint="请输入电话号码"
+        android:ems="15"
+        android:inputType="phone" >
+        <requestFocus />
+    </EditText>
+    <EditText
+        android:id="@+id/editSms"
+        android:layout_marginTop="10dp"
+        android:minLines="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editNum"
+        android:layout_below="@+id/editNum"
+        android:hint="请输入短信内容"
+        android:ems="10" />
+    <Button
+        android:id="@+id/btnCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editSms"
+        android:layout_below="@+id/editSms"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="10dp"
+        android:text="拨打电话" />
+    <Button
+        android:id="@+id/btnSms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/editSms"
+        android:layout_alignTop="@+id/btnCall"
+        android:layout_marginRight="50dp"
+        android:text="发短信" />
+
+</RelativeLayout>
